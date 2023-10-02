@@ -1,0 +1,90 @@
+// Étape 5: Utilisation de variables SCSS pour les couleurs
+$primary-color: #27ae60; // Vert
+$secondary-color: #9b59b6; // Violet
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+// Étape 6: Styles pour l'en-tête
+header {
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+// Étape 7: Styles pour la liste de serveurs
+.server-list {
+    padding: 20px;
+}
+
+.server {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    transition: background-color 0.3s ease; // Transition pour le survol
+}
+
+.server:hover {
+    background-color: #e0e0e0;
+}
+
+.status {
+    font-weight: bold;
+}
+
+// Étape 8: Styles pour les serveurs en ligne et hors ligne
+.online {
+    color: $primary-color;
+}
+
+.offline {
+    color: #e74c3c;
+}
+
+// Étape 9: Styles pour le bouton "Favoris"
+.favorite-button {
+    background-color: $secondary-color;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease; // Transition pour le survol
+}
+
+.favorite-button:hover {
+    background-color: darken($secondary-color, 10%); // Assombrir légèrement la couleur au survol
+}
+
+// Étape 10: Styles pour la notification
+.notification {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 5px 10px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
